@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sơ Đồ Chỗ Ngồi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .classroom {
+            display: grid;
+            grid-template-rows: auto repeat(6, auto);
+            grid-template-columns: repeat(9, 1fr);
+            gap: 10px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border: 2px solid #333; /* Viền quanh sơ đồ */
+        }
+        .teacher-desk {
+            grid-column: 9;
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: green;
+            border-radius: 5px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .teacher-desk img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .desk {
+            background: #ff6347;
+            color: yellow;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s;
+        }
+        .desk:hover {
+            background: #ff4500;
+            cursor: pointer;
+        }
+        .aisle {
+            background: transparent;
+        }
+        .blackboard {
+            grid-column: 2 / span 6; /* Bảng đen trải rộng từ cột 2 đến cột 8 */
+            grid-row: 1; /* Đặt bảng đen vào hàng 1 */
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        .desk a {
+            color: yellow;
+            text-decoration: none;
+        }
+        .desk a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="classroom">
+    <!-- Bàn giáo viên -->
+    <div class="teacher-desk">
+        <img src="https://mail.google.com/mail/u/0?ui=2&ik=bf4a6fc450&attid=0.1&permmsgid=msg-a:r7671118916887171069&th=193b4f70c93575f5&view=fimg&fur=ip&permmsgid=msg-a:r7671118916887171069&sz=s0-l75-ft&attbid=ANGjdJ9ua_8Z70_iGKxAslbMuCNWV0EgDGDdqJisZbY5y9n3D8YMnNz2ukE5FAkvGiWiTMx90CnuXaR9ST9CwilDC17OTHO6FMEq1-lgTysj07-ky23ikon2GT28Emw&disp=emb&realattid=ii_193b4f6f5f01d7c614c1&zw" alt="Ảnh giáo viên">
+        Bàn Giáo Viên
+    </div>
+
+    <!-- Bảng đen (đặt ở chính giữa) -->
+    <div class="blackboard">
+        Bảng Đen
+    </div>
+
+    <!-- Hàng 1 -->
+    <div class="desk"><a href="/sodolopto1/Khiêm 12A2_Nhật kí.html">Dương Linh Khiêm</a></div>
+    <div class="desk"><a href="student2.html">trống</a></div>
+    <div class="desk"><a href="student3.html">Trần Thanh Quy</a></div>
+    <div class="desk"><a href="student4.html">Đổ Phong Phú </a></div>
+    <div class="aisle"></div> <!-- Lối đi -->
+    <div class="desk"><a href="student5.html">Trần Nguyễn Ngọc Thy</a></div>
+    <div class="desk"><a href="student6.html">Trần Thị Hồng Mơ </a></div>
+    <div class="desk"><a href="student7.html">Trương Triệu Vy</a></div>
+    <div class="desk"><a href="student8.html">Hồ Huỳnh Thư</a></div>
+
+    <!-- Hàng 2 -->
+    <div class="desk"><a href="student9.html">Đoàn Tuấn Kha </a></div>
+    <div class="desk"><a href="student10.html">Nguyễn Xuân Bách</a></div>
+    <div class="desk"><a href="/sodolopto1/Liêu Huỳnh Lê Luận-12A2.html">Liêu Huỳnh Lê Luận</a></div>
+    <div class="desk"><a href="student12.html">Châu Hoàng Khiêm</a></div>
+    <div class="aisle"></div> <!-- Lối đi -->
+    <div class="desk"><a href="student13.html">Lê Hải Âu</a></div>
+    <div class="desk"><a href="student14.html">Chung Mỹ Kiều </a></div>
+    <div class="desk"><a href="student15.html">Phạm Kim Anh</a></div>
+    <div class="desk"><a href="student16.html">Trần Ngọc Diễm My</a></div>
+
+    <!-- Hàng 3 -->
+    <div class="desk"><a href="student17.html">Đỗ Đăng Khoa</a></div>
+    <div class="desk"><a href="khoaanh.html">Lê Khoa Anh </a></div>
+    <div class="desk"><a href="student19.html">Lê Tấn Sang</a></div>
+    <div class="desk"><a href="student20.html">Tào Chí Tường </a></div>
+    <div class="aisle"></div> <!-- Lối đi -->
+    <div class="desk"><a href="student21.html">Nguyễn Thị Mỹ Đa</a></div>
+    <div class="desk"><a href="student22.html">Nguyễn Huỳnh Anh Thư</a></div>
+    <div class="desk"><a href="student23.html">Ong Thị Mỹ Duyên</a></div>
+    <div class="desk"><a href="student24.html">Trần Duy Thịnh</a></div>
+
+    <!-- Hàng 4 -->
+    <div class="desk"><a href="/sodolopto2/Trần Thanh Bảo 12A2.html">Trần Thanh Bảo </a></div>
+    <div class="desk"><a href="/sodolopto2/MINHLUÂN.HTML">Nguyễn Minh Luân </a></div>
+    <div class="desk"><a href="/sodolopto2/Thoáng_12A2 Nhật kí.html">Nguyễn Văn Thoáng</a></div>
+    <div class="desk"><a href="/sodolopto2/TKhang 12a2.html">Lê Thành Khang</a></div>
+    <div class="aisle"></div> <!-- Lối đi -->
+    
+	
+	
+	<div class="desk"><a href="student29.html">Nguyễn Thị Trin Su</a></div> 
+    <div class="desk"><a href="student30.html">Tiền Thị Thảo My</a></div>
+    <div class="desk"><a href="student31.html">Lâm Thảo Vy</a></div>
+    <div class="desk"><a href="student32.html">Lê Thị Khánh Châu </a></div>
+
+    <!-- Hàng 5 -->
+    <div class="desk"><a href="student33.html">Lê Vũ Duy</a></div>
+    <div class="desk"><a href="/sodolopto2/Nguyễn Minh Kha.html">Nguyễn Minh Kha</a></div>
+    <div class="desk"><a href="/sodolopto2/Võ Trần Thanh Tùng 12a2.html">Võ Trần Thanh Tùng</a></div>
+    <div class="desk"><a href="/sodolopto2/">Sử Hoàng Đô</a></div>
+    <div class="aisle"></div> <!-- Lối đi -->
+    <div class="desk"><a href="student37.html">Hồ Thị Tuyến Giao</a></div>
+    <div class="desk"><a href="student38.html">Sử Kim Nhẫn</a></div>
+    <div class="desk"><a href="student39.html">Trần Nguyễn Huy</a></div>
+    <div class="desk"><a href="student40.html">Học Sinh 40</a></div>
+
+    <!-- Hàng 6 -->
+    <div class="desk"><a href="student41.html">Nguyễn Đăng </a></div>
+    <div class="desk"><a href="student42.html">Khôi Trần Vĩ Văn</a></div>
+    <div class="desk"><a href="student43.html">Tăng Phúc Tài</a></div>
+    <div class="desk"><a href="student44.html">Học Sinh 44</a></div>
+    <div class="aisle"></div> <!-- Lối đi -->
+    <div class="desk"><a href="student45.html">Học Sinh 45</a></div>
+    <div class="desk"><a href="student46.html">Học Sinh 46</a></div>
+    <div class="desk"><a href="student47.html">Học Sinh 47</a></div>
+    <div class="desk"><a href="student48.html">Học Sinh 48</a></div>
+</div>
+
+</body>
+</html>

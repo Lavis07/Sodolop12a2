@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title> Lê Tấn Sang </title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      background-color: #32e9a3;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1000px;
+      margin: 20px auto;
+      background-color: rgba(11, 240, 248, 0.76);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .left,
+    .right {
+      padding: 20px;
+    }
+
+    .left {
+      width: 40%;
+      background-color: #56dcf3;
+      border-right: 1px solid #ddd;
+      text-align: center;
+    }
+
+    .right {
+      width: 60%;
+    }
+
+    .profile img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .profile h1 {
+        font-family: 'Dancing Script', cursive;
+      font-size: 2em;
+      color: #f0067b;
+      margin: 0;
+    }
+
+    .profile p {
+      color: #000000;
+      margin: 5px 0;    
+    }
+
+    .timeline h2 {
+        font-family: 'Dancing Script', cursive;
+        font-weight: bold;
+      color: #f10707;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 50px;
+    }
+
+    .event {
+      border-left: 3px solid #000000;
+      padding-left: 20px;
+      margin: 20px 0;
+      position: relative;
+    }
+
+    .event::before {
+      content: "";
+      position: absolute;
+      left: -7px;
+      top: 10px;
+      width: 14px;
+      height: 14px;
+      background-color: #000000;
+      border-radius: 50%;
+    }
+
+    .event h3 {
+      font-size: 1.5em;
+      color: #080cf1;
+      margin: 0;
+    }
+
+    .event p {
+      color: #0e1fb8;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Bên trái: Thông tin cá nhân -->
+    <div class="left">
+      <div class="profile">
+        <img src="https://scontent.fvca1-3.fna.fbcdn.net/v/t39.30808-6/469023796_994813012482530_3317699494588783125_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGPEeDiUf84Po2BKaxY1-X3yZaQRvI6G0HJlpBG8jobQcQI_fj_4pUQmEVwpi2hL4AkXAdbm5Z0TyQDShUdqgSU&_nc_ohc=mCto2fCF1nEQ7kNvgHZYYde&_nc_zt=23&_nc_ht=scontent.fvca1-3.fna&_nc_gid=A_KFpmgSKIPziYS2l0_l4OF&oh=00_AYASqI_pbMADxx5KndcLrEBvG1oJ95SPFpphkxCU0nGYdg&oe=6754EAF6" alt="Ảnh cá nhân">
+        <h1> Lê Tấn Sang </h1>
+        <p>Ngày sinh: 02/11/2007</p>
+        <p>Email:tansangle56@gmail.com</p>
+        <p>Điện thoại: 0838349835</p>
+        <p>Địa chỉ: khóm 1, phường 1, thị xã Ngã Năm, tỉnh Sóc Trăng</p>
+      </div>
+    </div>
+
+    <!-- Bên phải: Các sự kiện quan trọng -->
+    <div class="right">
+      <div class="timeline">
+        <h2>Mốc Son</h2>
+
+        <div class="event">
+          <h3>Lớp 10 (Năm học 2022-2023)</h3>
+          <ul>
+            <li>Đậu tuyển sinh 10 vào trường THPT Mai Thanh Thế.</li>
+            <li>Đậu nguyện vọng 1 vào tổ hợp 1 lớp 10A2.</li>
+            <li>Là thành viên của tổ 4,bắt đầu có bạn học mới, được bạn bè thầy cô thân thiện giúp đỡ.</li>
+          </ul>
+         
+        </div>
+
+        <div class="event">
+          <h3 style="color:red"> Lớp 11 (Năm học 2023-2024) </h3>
+          <ul>
+            <li>Trở thành thành viên của tổ 4 lớp 11A2.</li>
+            <li> Tiếp tục học tập và tích cực tham gia các phong trào của lớp </li>
+            <li>Đạt học lực xuất sắc vào kì 2</li>
+            <li>Đạt danh hiệu <strong> học sinh xuất sắc </strong> cả học kì </li>
+          </ul>
+        </div>
+
+        <div class="event">
+          <h3 style="color:purple"> Lớp 12 (Năm học 2024-2025) </h3>
+          <ul>
+            <li>Trở thành thành viên lớp 12A2.</li>
+            <li>Xác định được ngành học và ngôi trường đại học mơ ước.</li>
+            <li>Mục tiêu đỗ nguyện vọng 1 trong kì Tốt nghiệp THPT Quốc gia 2025</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
